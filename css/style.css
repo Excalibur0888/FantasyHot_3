@@ -1898,7 +1898,7 @@ a:hover {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .restricted-modal.active {
@@ -1906,30 +1906,23 @@ a:hover {
 }
 
 .restricted-modal .modal-content {
-    background: #1a1a2e;
+    background: #1a1a1a;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 15px;
     text-align: center;
-    max-width: 400px;
-    width: 90%;
+    max-width: 90%;
+    width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .restricted-modal h2 {
-    color: white;
-    font-size: 1.5rem;
+    color: #ff4444;
     margin-bottom: 1rem;
 }
 
 .restricted-modal p {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1rem;
-}
-
-.restricted-modal p:last-child {
-    color: #ef4444;
-    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 0.5rem;
 }
 
 .age-verification {
@@ -1942,7 +1935,7 @@ a:hover {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .age-verification.active {
@@ -1950,31 +1943,28 @@ a:hover {
 }
 
 .age-verification-content {
-    background: #1a1a2e;
+    background: #1a1a1a;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 15px;
     text-align: center;
-    max-width: 400px;
-    width: 90%;
+    max-width: 90%;
+    width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.age-verification img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 1.5rem;
-}
-
-.age-verification h2 {
-    color: white;
-    font-size: 1.5rem;
+.age-verification-content img {
+    width: 150px;
     margin-bottom: 1rem;
 }
 
-.age-verification p {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 2rem;
+.age-verification-content h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.age-verification-content p {
+    color: #ccc;
+    margin-bottom: 1.5rem;
 }
 
 .age-buttons {
@@ -1983,33 +1973,31 @@ a:hover {
     justify-content: center;
 }
 
-.age-buttons button {
-    padding: 0.75rem 2rem;
+.btn-yes, .btn-no {
+    padding: 0.8rem 2rem;
     border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .btn-yes {
-    background: #10b981;
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-no {
+    background: #444;
     color: white;
 }
 
 .btn-yes:hover {
-    background: #059669;
-    transform: translateY(-2px);
-}
-
-.btn-no {
-    background: #ef4444;
-    color: white;
+    background: var(--primary-color-dark);
 }
 
 .btn-no:hover {
-    background: #dc2626;
-    transform: translateY(-2px);
+    background: #555;
 }
 
 /* Blog Styles */
