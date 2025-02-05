@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#004BA0" stroke="#D1AB3E" stroke-width="4"/>
+    
+    <!-- MI Logo -->
+    <path d="M35 45H45V75H35V45Z" fill="#D1AB3E"/>
+    <path d="M75 45H85V75H75V45Z" fill="#D1AB3E"/>
+    <path d="M45 55L60 40L75 55V75H45V55Z" fill="#D1AB3E"/>
+    
+    <!-- Cricket Ball -->
+    <circle cx="60" cy="85" r="8" fill="#FFFFFF"/>
+    <path d="M55 85H65M60 80V90" stroke="#004BA0" stroke-width="1.5"/>
+    <path d="M57 82L63 88M63 82L57 88" stroke="#004BA0" stroke-width="1.5"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#D1AB3E"/>
+    <text x="60" y="102" font-family="Arial" font-size="9" fill="#004BA0" text-anchor="middle">MUMBAI INDIANS</text>
+    
+    <!-- Stars (representing IPL titles) -->
+    <g fill="#D1AB3E">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M50 20L52 25L47 23L50 20Z"/>
+        <path d="M60 18L62 23L57 21L60 18Z"/>
+        <path d="M70 20L72 25L67 23L70 20Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#D1AB3E" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

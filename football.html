@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football - FantasyHot</title>
+    <meta name="description" content="Play Fantasy Football on FantasyHot. Create your dream team and compete in exciting tournaments!">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/football.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+			<div class="container">
+					<div class="header-content">
+							<div class="logo">
+									<a href="index.html">
+											<img src="img/logo.svg" alt="FantasyHot Logo">
+									</a>
+							</div>
+							<button class="burger-menu" aria-label="Открыть меню">
+									<span></span>
+									<span></span>
+									<span></span>
+							</button>
+							<div class="nav-wrapper">
+									<nav class="main-nav">
+											<ul class="desktop-nav">
+													<li><a href="index.html">Home</a></li>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="contact.html">Contact</a></li>
+											</ul>
+											<ul class="mobile-nav">
+													<li><a href="index.html">Home</a></li>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="contact.html">Contact</a></li>
+													<li><a href="cricket.html">Fantasy Cricket</a></li>
+													<li><a href="football.html">Fantasy Football</a></li>
+													<li><a href="basketball.html">Fantasy Basketball</a></li>
+													<li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+													<li><a href="aviator.html">Aviator</a></li>
+													<li><a href="plinko.html">Plinko</a></li>
+													<li><a href="laser247.html">Laser247</a></li>
+													<li><a href="101f.html">101f</a></li>
+											</ul>
+									</nav>
+							</div>
+							<div class="games-dropdown">
+									<button class="games-dropdown-btn">
+											Games
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+											</svg>
+									</button>
+									<div class="games-dropdown-content">
+											<a href="/aviator.html">
+													<span class="game-icon">✈️</span>
+													Aviator
+											</a>
+											<a href="/plinko.html">
+													<span class="game-icon">🎯</span>
+													Plinko
+											</a>
+											<a href="/laser247.html">
+													<span class="game-icon">🎮</span>
+													Laser247
+											</a>
+											<a href="/101f.html">
+													<span class="game-icon">🎲</span>
+													101f
+											</a>
+											<a href="/football.html">
+													<span class="game-icon">⚽</span>
+													Football
+											</a>
+											<a href="/basketball.html">
+													<span class="game-icon">🏀</span>
+													Basketball
+											</a>
+											<a href="/cricket.html">
+													<span class="game-icon">🏏</span>
+													Cricket
+											</a>
+											<a href="/kabaddi.html">
+													<span class="game-icon">🤼</span>
+													Kabaddi
+											</a>
+									</div>
+							</div>
+					</div>
+			</div>
+	</header>
+
+    <!-- Football Hero Section -->
+    <section class="football-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="badge-pulse"></span>
+                    LIVE MATCHES
+                </div>
+                <h1>Fantasy Football</h1>
+                <p class="hero-description">Create your dream team, compete in tournaments, and win amazing rewards</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">🏆</div>
+                        <div class="feature-content">
+                            <span class="feature-label">Prize Pool</span>
+                            <span class="feature-value">100,000 Points</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👥</div>
+                        <div class="feature-content">
+                            <span class="feature-label">Active Players</span>
+                            <span class="feature-value">50,000+</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚽</div>
+                        <div class="feature-content">
+                            <span class="feature-label">Live Matches</span>
+                            <span class="feature-value">24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn-primary">Start Playing</a>
+                    <a href="#matches" class="btn-secondary">View Matches</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Matches Section -->
+    <section id="matches" class="matches-section">
+        <div class="container">
+            <h2>Live Matches</h2>
+            <div class="matches-grid">
+                <div class="match-card">
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="img/teams/manchester.svg" alt="Manchester United">
+                            <span>Manchester United</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="img/teams/liverpool.svg" alt="Liverpool">
+                            <span>Liverpool</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-time">Today, 20:00 GMT</div>
+                        <div class="prize-pool">Prize Pool: 10,000 Points</div>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="img/teams/arsenal.svg" alt="Arsenal">
+                            <span>Arsenal</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="img/teams/chelsea.svg" alt="Chelsea">
+                            <span>Chelsea</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-time">Today, 22:00 GMT</div>
+                        <div class="prize-pool">Prize Pool: 8,000 Points</div>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="img/teams/city.svg" alt="Manchester City">
+                            <span>Manchester City</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="img/teams/tottenham.svg" alt="Tottenham">
+                            <span>Tottenham</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-time">Tomorrow, 19:30 GMT</div>
+                        <div class="prize-pool">Prize Pool: 12,000 Points</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Cards Section -->
+    <section class="player-cards-section">
+        <div class="container">
+            <h2>Top Players</h2>
+            <div class="player-cards-grid">
+                <div class="player-card gold">
+                    <div class="player-image">
+                        <img src="img/player4.jpg" alt="Player Name">
+                    </div>
+                    <div class="player-info">
+                        <h3>Marcus Rashford</h3>
+                        <span class="player-role">Forward</span>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="label">Goals</span>
+                                <span class="value">15</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Assists</span>
+                                <span class="value">8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Rating</span>
+                                <span class="value">8.5</span>
+                            </div>
+                        </div>
+										<a href="contact.html" class="btn-buy">Buy Player</a>
+                    </div>
+                </div>
+
+                <div class="player-card silver">
+                    <div class="player-image">
+                        <img src="img/player5.jpg" alt="Player Name">
+                    </div>
+                    <div class="player-info">
+                        <h3>Kevin De Bruyne</h3>
+                        <span class="player-role">Midfielder</span>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="label">Goals</span>
+                                <span class="value">10</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Assists</span>
+                                <span class="value">18</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Rating</span>
+                                <span class="value">8.8</span>
+                            </div>
+                        </div>
+										<a href="contact.html" class="btn-buy">Buy Player</a>
+                    </div>
+                </div>
+
+                <div class="player-card bronze">
+                    <div class="player-image">
+                        <img src="img/player6.jpg" alt="Player Name">
+                    </div>
+                    <div class="player-info">
+                        <h3>Mo Salah</h3>
+                        <span class="player-role">Forward</span>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="label">Goals</span>
+                                <span class="value">17</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Assists</span>
+                                <span class="value">7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Rating</span>
+                                <span class="value">8.3</span>
+                            </div>
+                        </div>
+										<a href="contact.html" class="btn-buy">Buy Player</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Boosts Section -->
+    <section class="boosts-section">
+        <div class="container">
+            <h2>Power Boosts</h2>
+            <div class="boosts-grid">
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg class="boost-svg" viewBox="0 0 24 24">
+                            <path d="M13 20h-2v-7H4v-2l8-9 8 9v2h-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Captain Boost</h3>
+                    <p>2x points for your captain</p>
+                    <div class="boost-price">500 points</div>
+										<a href="contact.html" class="btn-buy">Buy Boost</a>
+                </div>
+
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg class="boost-svg" viewBox="0 0 24 24">
+                            <path d="M12 2L4 9h16L12 2zm0 9L4 18h16L12 11z"/>
+                        </svg>
+                    </div>
+                    <h3>Double Points</h3>
+                    <p>Double points for all players</p>
+                    <div class="boost-price">1000 points</div>
+										<a href="contact.html" class="btn-buy">Buy Boost</a>
+                </div>
+
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg class="boost-svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                            <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                        </svg>
+                    </div>
+                    <h3>Extra Time</h3>
+                    <p>Additional points in extra time</p>
+                    <div class="boost-price">750 points</div>
+										<a href="contact.html" class="btn-buy">Buy Boost</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+			<div class="container">
+					<div class="footer-content">
+						<div>
+							<div class="footer-logo">
+									<img src="img/logo.svg" alt="FantasyHot Logo">
+							</div>
+							<div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+									<a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+											<img src="img/6.png" alt="GamCare Logo" style="height: 40px; width: auto;">
+									</a>
+									<div style="background: #e11d48; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: bold; font-size: 1.125rem;">
+											<span>18+</span>
+									</div>
+							</div>
+						</div>
+							<div class="footer-links">
+									<div class="footer-column">
+											<h4>Fantasy Sports</h4>
+											<ul>
+													<li><a href="cricket.html">Fantasy Cricket</a></li>
+													<li><a href="football.html">Fantasy Football</a></li>
+													<li><a href="basketball.html">Fantasy Basketball</a></li>
+													<li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+											</ul>
+									</div>
+									<div class="footer-column">
+										<h4>Fantasy Arcade</h4>
+										<ul>
+												<li><a href="cricket.html">Fantasy 101F</a></li>
+												<li><a href="football.html">Fantasy Plinko</a></li>
+												<li><a href="basketball.html">Fantasy Laser247</a></li>
+												<li><a href="kabaddi.html">Fantasy Aviator</a></li>
+										</ul>
+								</div>
+									<div class="footer-column">
+											<h4>Quick Links</h4>
+											<ul>
+													<li><a href="contact.html">Contact</a></li>
+													<li><a href="privacy-policy.html">Privacy Policy</a></li>
+													<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+											</ul>
+									</div>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<p class="copyright">&copy; 2024 FantasyHot. All rights reserved.</p>
+					</div>
+			</div>
+	</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

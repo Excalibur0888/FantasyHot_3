@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#E31E24" stroke="#FFFFFF" stroke-width="4"/>
+    
+    <!-- Lion Face -->
+    <path d="M40 45C40 45 50 35 60 35C70 35 80 45 80 45L60 65L40 45Z" fill="#FFFFFF"/>
+    <circle cx="52" cy="45" r="3" fill="#E31E24"/>
+    <circle cx="68" cy="45" r="3" fill="#E31E24"/>
+    <path d="M55 50C55 50 60 55 60 55C60 55 65 50 65 50" stroke="#E31E24" stroke-width="3"/>
+    
+    <!-- Mane -->
+    <path d="M35 40C35 40 45 30 60 30C75 30 85 40 85 40" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M38 38C38 38 48 28 60 28C72 28 82 38 82 38" stroke="#FFFFFF" stroke-width="3"/>
+    
+    <!-- Shield -->
+    <path d="M45 65C45 65 60 85 60 85C60 85 75 65 75 65L60 90L45 65Z" fill="#FFFFFF"/>
+    <path d="M50 70C50 70 60 85 60 85C60 85 70 70 70 70" stroke="#E31E24" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#FFFFFF"/>
+    <text x="60" y="102" font-family="Arial" font-size="9" fill="#E31E24" text-anchor="middle">DABANG DELHI</text>
+    
+    <!-- Stars (representing achievements) -->
+    <g fill="#FFFFFF">
+        <path d="M45 20L47 25L42 23L45 20Z"/>
+        <path d="M75 20L77 25L72 23L75 20Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#FFFFFF" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

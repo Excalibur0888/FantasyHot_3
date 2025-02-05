@@ -1,0 +1,594 @@
+/* Root Variables */
+:root {
+    --neon-pink: #ff2d55;
+    --neon-blue: #00a8ff;
+    --neon-purple: #a855f7;
+    --dark-bg: #0f172a;
+    --light-text: #f8fafc;
+}
+
+/* Hero Section */
+.game-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                var(--dark-bg);
+    padding: 10rem 0 6rem;
+    color: var(--light-text);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, var(--neon-blue) 1px, transparent 1px) 0 0 / 50px 50px,
+        linear-gradient(0deg, var(--neon-blue) 1px, transparent 1px) 0 0 / 50px 50px;
+    opacity: 0.05;
+    animation: gridMove 20s linear infinite;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
+    color: var(--light-text);
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: var(--light-text);
+    opacity: 0.9;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature {
+    background: rgba(0, 168, 255, 0.1);
+    border: 1px solid var(--neon-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    background: rgba(0, 168, 255, 0.1);
+    border-radius: 50%;
+    color: var(--neon-blue);
+}
+
+/* Game Features Section */
+.game-features {
+    background: var(--dark-bg);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, var(--neon-purple) 1px, transparent 1px) 0 0 / 50px 50px,
+        linear-gradient(0deg, var(--neon-purple) 1px, transparent 1px) 0 0 / 50px 50px;
+    opacity: 0.05;
+    animation: gridMove 20s linear infinite;
+}
+
+.game-features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--light-text);
+    position: relative;
+    z-index: 1;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.feature-card .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    color: var(--neon-blue);
+}
+
+.feature-card h3 {
+    color: var(--light-text);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.feature-card p {
+    color: var(--light-text);
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* How to Play Section */
+.how-to-play {
+    background: linear-gradient(135deg, var(--dark-bg), #1a1a2a);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.how-to-play h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--light-text);
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--neon-blue);
+    color: var(--light-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.step-card h3 {
+    color: var(--light-text);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.step-card p {
+    color: var(--light-text);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes gridMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Game Mechanics */
+.game-mechanics {
+    background: var(--dark-bg);
+    padding: 6rem 0;
+    color: var(--light-text);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-mechanics h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.game-mechanics h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--light-text);
+}
+
+.mechanics-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mechanics-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 168, 255, 0.1);
+    border: 1px solid var(--neon-blue);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.mechanics-list li:hover {
+    transform: translateX(10px);
+    background: rgba(0, 168, 255, 0.2);
+}
+
+/* Risk Levels */
+.risk-levels {
+    background: linear-gradient(135deg, var(--dark-bg), #1a1a2a);
+    padding: 6rem 0;
+    color: var(--light-text);
+    position: relative;
+}
+
+.risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.risk-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.risk-card.low {
+    border: 1px solid #10b981;
+}
+
+.risk-card.medium {
+    border: 1px solid #f59e0b;
+}
+
+.risk-card.high {
+    border: 1px solid #ef4444;
+}
+
+.risk-card:hover {
+    transform: translateY(-5px);
+}
+
+.risk-indicator {
+    margin: 1.5rem 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.dot.green {
+    background: #10b981;
+    box-shadow: 0 0 15px #10b981;
+}
+
+.dot.yellow {
+    background: #f59e0b;
+    box-shadow: 0 0 15px #f59e0b;
+}
+
+.dot.red {
+    background: #ef4444;
+    box-shadow: 0 0 15px #ef4444;
+}
+
+.risk-stats {
+    margin-top: 1.5rem;
+}
+
+.stat {
+    margin-bottom: 1rem;
+}
+
+.stat .label {
+    display: block;
+    color: var(--light-text);
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.stat .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neon-blue);
+}
+
+/* High Scores */
+.high-scores {
+    background: var(--dark-bg);
+    padding: 6rem 0;
+    color: var(--light-text);
+    position: relative;
+}
+
+.scores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.score-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.score-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.score-label {
+    color: var(--light-text);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+/* Achievements */
+.achievements {
+    background: linear-gradient(135deg, var(--dark-bg), #1a1a2a);
+    padding: 6rem 0;
+    color: var(--light-text);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    color: var(--neon-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.achievement-card p {
+    color: var(--light-text);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 6px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--neon-blue);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Arcade Button Styles */
+.arcade-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-arcade-primary,
+.btn-arcade-secondary {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.btn-arcade-primary {
+    background: linear-gradient(45deg, #ff0066, #ff3998);
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 102, 0.4);
+}
+
+.btn-arcade-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 0, 102, 0.6);
+}
+
+.btn-arcade-secondary {
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    color: #ff0066;
+    border: 2px solid #ff0066;
+}
+
+.btn-arcade-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+}
+
+.btn-pixel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 50%, transparent 75%);
+    background-size: 8px 8px;
+    animation: pixelMove 1s linear infinite;
+}
+
+@keyframes pixelMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 8px 8px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .steps-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .risk-grid,
+    .scores-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .mechanics-list li {
+        font-size: 1rem;
+    }
+
+    .score-value {
+        font-size: 2rem;
+    }
+
+    .arcade-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-arcade-primary,
+    .btn-arcade-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+} 

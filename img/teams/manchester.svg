@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#DA291C" stroke="#E5E7EB" stroke-width="4"/>
+    
+    <!-- Red Devil Logo -->
+    <path d="M40 35C40 35 45 40 60 40C75 40 80 35 80 35C80 35 75 55 60 55C45 55 40 35 40 35Z" fill="#FFD700"/>
+    <path d="M50 45L45 50M70 45L75 50" stroke="#000" stroke-width="2"/>
+    <path d="M55 48C55 48 58 50 60 50C62 50 65 48 65 48" stroke="#000" stroke-width="2"/>
+    
+    <!-- Football -->
+    <circle cx="60" cy="70" r="15" fill="#FFFFFF"/>
+    <path d="M50 70L70 70M60 60L60 80" stroke="#000" stroke-width="2"/>
+    <path d="M53 63L67 77M67 63L53 77" stroke="#000" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#000000"/>
+    <text x="60" y="92" font-family="Arial" font-size="8" fill="white" text-anchor="middle">MANCHESTER UNITED</text>
+    
+    <!-- Stars (representing trophies) -->
+    <g fill="#FFD700">
+        <path d="M45 25L47 30L42 28L45 25Z"/>
+        <path d="M60 20L62 25L57 23L60 20Z"/>
+        <path d="M75 25L77 30L72 28L75 25Z"/>
+    </g>
+</svg> 

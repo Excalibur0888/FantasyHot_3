@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Basketball Pattern -->
+    <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M5 25H45M25 5V45" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 10L40 40M40 10L10 40" stroke="currentColor" stroke-width="2"/>
+    
+    <!-- Corner Decorations -->
+    <circle cx="5" cy="5" r="2" fill="currentColor"/>
+    <circle cx="45" cy="5" r="2" fill="currentColor"/>
+    <circle cx="5" cy="45" r="2" fill="currentColor"/>
+    <circle cx="45" cy="45" r="2" fill="currentColor"/>
+</svg> 

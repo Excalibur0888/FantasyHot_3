@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#1C1C1C" stroke="#C4942D" stroke-width="4"/>
+    
+    <!-- Traditional Tamil Symbol -->
+    <path d="M45 35L60 25L75 35L70 40H50L45 35Z" fill="#C4942D"/>
+    <path d="M50 40H70L60 60L50 40Z" fill="#C4942D"/>
+    
+    <!-- Decorative Patterns -->
+    <path d="M40 45C40 45 50 55 60 55C70 55 80 45 80 45" stroke="#C4942D" stroke-width="2"/>
+    <path d="M45 50C45 50 55 60 60 60C65 60 75 50 75 50" stroke="#C4942D" stroke-width="2"/>
+    
+    <!-- Temple Tower -->
+    <path d="M50 65L60 45L70 65L60 85L50 65Z" fill="#C4942D"/>
+    <path d="M55 70L60 55L65 70L60 80L55 70Z" fill="#1C1C1C"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#C4942D"/>
+    <text x="60" y="102" font-family="Arial" font-size="8" fill="#1C1C1C" text-anchor="middle">TAMIL THALAIVAS</text>
+    
+    <!-- Stars (representing achievements) -->
+    <g fill="#C4942D">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#C4942D" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

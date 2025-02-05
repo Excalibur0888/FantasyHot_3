@@ -1,0 +1,948 @@
+/* Root Variables */
+:root {
+    --flight-primary: #00a8ff;
+    --flight-secondary: #0097e6;
+    --flight-accent: #ffd700;
+    --flight-dark: #2f3640;
+    --flight-light: #f5f6fa;
+}
+
+/* Game Section */
+.game-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: calc(100vh - 80px);
+    color: white;
+}
+
+.game-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.game-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.multiplier {
+    text-align: right;
+}
+
+.multiplier .current {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #10b981;
+    display: block;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.multiplier .max {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+/* Game Canvas */
+.game-canvas {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-20px, 20px); }
+}
+
+.airplane {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.airplane img {
+    width: 100%;
+    height: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.trail {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+    transform-origin: right center;
+}
+
+/* Game Controls */
+.game-controls {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bet-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.bet-input label,
+.auto-cashout label {
+    display: block;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.input-group button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.btn-bet,
+.btn-cashout {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-bet {
+    background: #10b981;
+    color: white;
+    border: none;
+}
+
+.btn-bet:hover {
+    background: #059669;
+    transform: translateY(-2px);
+}
+
+.btn-cashout {
+    background: #ef4444;
+    color: white;
+    border: none;
+}
+
+.btn-cashout:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.btn-cashout:disabled {
+    background: #4b5563;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Game Stats */
+.game-stats {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.stats-header h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.stats-tabs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.stats-tabs button {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #9ca3af;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.stats-tabs button.active,
+.stats-tabs button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.stats-table {
+    width: 100%;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.table-header span {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.table-body {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.table-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Hero Section */
+.aviator-hero {
+    background: linear-gradient(135deg, var(--flight-dark), #1e272e);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.flight-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, rgba(0,168,255,0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(0,168,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: perspective(500px) rotateX(45deg);
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: perspective(500px) rotateX(45deg) translateY(0);
+    }
+    100% {
+        transform: perspective(500px) rotateX(45deg) translateY(50px);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--flight-light);
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(0, 168, 255, 0.1);
+    border: 1px solid var(--flight-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.badge-text {
+    color: var(--flight-primary);
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: pulse 1.5s infinite;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
+}
+
+.highlight {
+    color: var(--flight-accent);
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+/* Flight Features */
+.hero-features.flight-style {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.flight-feature {
+    background: rgba(0, 168, 255, 0.1);
+    border: 1px solid var(--flight-primary);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.flight-feature:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 168, 255, 0.2);
+}
+
+.flight-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--flight-primary);
+    margin-bottom: 1rem;
+}
+
+.feature-content {
+    text-align: center;
+}
+
+.feature-label {
+    display: block;
+    color: var(--flight-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-value {
+    display: block;
+    color: var(--flight-accent);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Buttons */
+.flight-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn-flight-primary,
+.btn-flight-secondary {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-flight-primary {
+    background: var(--flight-primary);
+    color: var(--flight-light);
+    border: none;
+}
+
+.btn-flight-primary:hover {
+    background: var(--flight-secondary);
+    transform: translateY(-2px);
+}
+
+.thrust-effect {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--flight-accent);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: thrust 0.5s infinite alternate;
+}
+
+.btn-flight-secondary {
+    background: transparent;
+    color: var(--flight-light);
+    border: 1px solid var(--flight-primary);
+}
+
+.btn-flight-secondary:hover {
+    background: rgba(0, 168, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Flight Features Section */
+.flight-features {
+    background: var(--flight-light);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.flight-heading {
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.flight-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--flight-primary);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.flight-feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.flight-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.flight-feature-card .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 168, 255, 0.1);
+    border-radius: 50%;
+}
+
+.flight-feature-card h3 {
+    color: var(--flight-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.flight-feature-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.feature-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stat {
+    background: rgba(0, 168, 255, 0.1);
+    color: var(--flight-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Game Demo Section */
+.game-demo {
+    background: var(--flight-dark);
+    padding: 4rem 0;
+}
+
+.demo-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 168, 255, 0.05);
+    border: 1px solid var(--flight-primary);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 400px;
+    background: transparent;
+}
+
+.game-controls {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multiplier {
+    color: var(--flight-light);
+}
+
+.multiplier .current {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--flight-accent);
+    margin-right: 1rem;
+}
+
+.multiplier .max {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-bet,
+.btn-cashout {
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-bet {
+    background: var(--flight-primary);
+    color: var(--flight-light);
+    border: none;
+}
+
+.btn-bet:hover {
+    background: var(--flight-secondary);
+}
+
+.btn-cashout {
+    background: var(--flight-accent);
+    color: var(--flight-dark);
+    border: none;
+}
+
+.btn-cashout:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+.btn-cashout:not(:disabled):hover {
+    background: #ffc400;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes thrust {
+    0% { transform: translateX(-50%) scale(1); }
+    100% { transform: translateX(-50%) scale(1.2); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-features.flight-style {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flight-feature {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-controls {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .control-buttons {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes patternMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* How to Play Section */
+.how-to-play-section {
+    background: linear-gradient(135deg, var(--flight-dark), #1e272e);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.how-to-play-section .flight-heading {
+	color: #fff;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--flight-primary);
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.step-number {
+    background: var(--flight-primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    color: var(--flight-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.step-content p {
+    color: white;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Achievements Section */
+.achievements-section {
+    background: var(--dark-bg);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, var(--neon-blue) 1px, transparent 1px) 0 0 / 50px 50px,
+        linear-gradient(0deg, var(--neon-blue) 1px, transparent 1px) 0 0 / 50px 50px;
+    opacity: 0.05;
+    animation: gridMove 20s linear infinite;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--flight-primary);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.2);
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+}
+
+.achievement-card h3 {
+    color: var(--flight-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.achievement-card p {
+    color: #000;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-progress {
+    background: rgba(255, 255, 255, 0.1);
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--flight-primary);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .steps-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tournament-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0.75rem;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    .tournament-timer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .time-block {
+        width: 100%;
+        min-width: auto;
+        padding: 0.5rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 0.5rem;
+    }
+
+    .time-block .number {
+        font-size: 1.125rem;
+        line-height: 1;
+        margin-bottom: 0.25rem;
+    }
+
+    .time-block .label {
+        font-size: 0.675rem;
+        line-height: 1;
+    }
+
+    .tournament-info {
+        width: 100%;
+        padding: 0.75rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 0.5rem;
+    }
+
+    .prize-pool {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .prize-pool h3 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .prize-amount {
+        font-size: 1.25rem;
+        word-break: break-word;
+        margin-bottom: 0.5rem;
+    }
+
+    .prize-distribution {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.375rem;
+        justify-content: center;
+    }
+
+    .prize-item {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 0.25rem;
+    }
+} 

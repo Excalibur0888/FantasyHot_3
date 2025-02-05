@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#00471B" stroke="#EEE1C6" stroke-width="4"/>
+    
+    <!-- Deer Logo -->
+    <path d="M30 60C30 60 45 40 60 40C75 40 90 60 90 60L60 80L30 60Z" fill="#EEE1C6"/>
+    <path d="M45 45L35 35M75 45L85 35" stroke="#EEE1C6" stroke-width="3"/>
+    <path d="M50 50L45 40M70 50L75 40" stroke="#EEE1C6" stroke-width="2"/>
+    <circle cx="50" cy="55" r="2" fill="#00471B"/>
+    <circle cx="70" cy="55" r="2" fill="#00471B"/>
+    
+    <!-- Basketball -->
+    <circle cx="60" cy="70" r="10" fill="#EEE1C6"/>
+    <path d="M53 70L67 70M60 63L60 77" stroke="#00471B" stroke-width="2"/>
+    <path d="M55 65L65 75M65 65L55 75" stroke="#00471B" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#EEE1C6"/>
+    <text x="60" y="92" font-family="Arial" font-size="10" fill="#00471B" text-anchor="middle">MILWAUKEE BUCKS</text>
+    
+    <!-- Championship Stars -->
+    <g fill="#EEE1C6">
+        <path d="M50 20L52 25L47 23L50 20Z"/>
+        <path d="M60 18L62 23L57 21L60 18Z"/>
+        <path d="M70 20L72 25L67 23L70 20Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M25 65C25 65 45 85 60 85C75 85 95 65 95 65" stroke="#EEE1C6" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

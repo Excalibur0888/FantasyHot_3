@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#007C59" stroke="#FFB81C" stroke-width="4"/>
+    
+    <!-- Protea Flower -->
+    <g fill="#FFB81C">
+        <!-- Petals -->
+        <path d="M50 40C50 40 55 35 60 35C65 35 70 40 70 40L60 55L50 40Z"/>
+        <path d="M40 45C40 45 45 40 50 40C55 40 60 45 60 45L50 60L40 45Z"/>
+        <path d="M60 45C60 45 65 40 70 40C75 40 80 45 80 45L70 60L60 45Z"/>
+    </g>
+    
+    <!-- Flower Center -->
+    <circle cx="60" cy="45" r="5" fill="#FFFFFF"/>
+    <circle cx="60" cy="45" r="3" fill="#007C59"/>
+    
+    <!-- Cricket Ball -->
+    <circle cx="60" cy="85" r="8" fill="#FFFFFF"/>
+    <path d="M55 85H65M60 80V90" stroke="#007C59" stroke-width="1.5"/>
+    <path d="M57 82L63 88M63 82L57 88" stroke="#007C59" stroke-width="1.5"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#FFB81C"/>
+    <text x="60" y="102" font-family="Arial" font-size="8" fill="#007C59" text-anchor="middle">SOUTH AFRICA</text>
+    
+    <!-- Stars (representing achievements) -->
+    <g fill="#FFB81C">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#FFB81C" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

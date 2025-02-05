@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#552583" stroke="#FDB927" stroke-width="4"/>
+    
+    <!-- Lakers Logo -->
+    <path d="M30 40C30 40 45 30 60 30C75 30 90 40 90 40L60 80L30 40Z" fill="#FDB927"/>
+    
+    <!-- Basketball -->
+    <circle cx="60" cy="55" r="15" fill="#FDB927"/>
+    <path d="M50 55L70 55M60 45L60 65" stroke="#552583" stroke-width="2"/>
+    <path d="M53 48L67 62M67 48L53 62" stroke="#552583" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#FDB927"/>
+    <text x="60" y="92" font-family="Arial" font-size="10" fill="#552583" text-anchor="middle">LA LAKERS</text>
+    
+    <!-- Stars (representing championships) -->
+    <g fill="#FDB927">
+        <path d="M35 25L37 30L32 28L35 25Z"/>
+        <path d="M45 20L47 25L42 23L45 20Z"/>
+        <path d="M55 18L57 23L52 21L55 18Z"/>
+        <path d="M65 18L67 23L62 21L65 18Z"/>
+        <path d="M75 20L77 25L72 23L75 20Z"/>
+        <path d="M85 25L87 30L82 28L85 25Z"/>
+    </g>
+    
+    <!-- Decorative Lines -->
+    <path d="M20 70C20 70 40 90 60 90C80 90 100 70 100 70" stroke="#FDB927" stroke-width="2" fill="none"/>
+</svg> 

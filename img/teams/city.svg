@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Manchester City Logo -->
+  <circle cx="250" cy="250" r="240" fill="#6CABDD"/>
+  <path d="M250 30c121.5 0 220 98.5 220 220s-98.5 220-220 220S30 371.5 30 250 128.5 30 250 30m0-20C117.2 10 10 117.2 10 250s107.2 240 240 240 240-107.2 240-240S382.8 10 250 10z" fill="#FFFFFF"/>
+  <path d="M250 60c104.9 0 190 85.1 190 190s-85.1 190-190 190S60 354.9 60 250 145.1 60 250 60m0-20c-116 0-210 94-210 210s94 210 210 210 210-94 210-210S366 40 250 40z" fill="#6CABDD"/>
+  <path d="M250 90c88.4 0 160 71.6 160 160s-71.6 160-160 160S90 338.4 90 250 161.6 90 250 90" fill="#FFFFFF"/>
+  <!-- Ship -->
+  <path d="M150 280h200v20H150z" fill="#6CABDD"/>
+  <path d="M180 260h140v20H180z" fill="#6CABDD"/>
+  <path d="M200 240h100v20H200z" fill="#6CABDD"/>
+  <!-- Stars -->
+  <circle cx="200" cy="200" r="10" fill="#6CABDD"/>
+  <circle cx="250" cy="180" r="10" fill="#6CABDD"/>
+  <circle cx="300" cy="200" r="10" fill="#6CABDD"/>
+</svg>

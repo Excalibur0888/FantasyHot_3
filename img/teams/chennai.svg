@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#FFFF3C" stroke="#0081E5" stroke-width="4"/>
+    
+    <!-- Lion Logo -->
+    <path d="M40 45C40 45 50 35 60 35C70 35 80 45 80 45L60 70L40 45Z" fill="#0081E5"/>
+    <path d="M45 42C45 42 55 50 60 50C65 50 75 42 75 42" stroke="#0081E5" stroke-width="3"/>
+    <circle cx="55" cy="45" r="2" fill="#FFFF3C"/>
+    <circle cx="65" cy="45" r="2" fill="#FFFF3C"/>
+    
+    <!-- Crown -->
+    <path d="M45 35L60 25L75 35L70 40H50L45 35Z" fill="#0081E5"/>
+    
+    <!-- Cricket Ball -->
+    <circle cx="60" cy="85" r="8" fill="#FFFFFF"/>
+    <path d="M55 85H65M60 80V90" stroke="#0081E5" stroke-width="1.5"/>
+    <path d="M57 82L63 88M63 82L57 88" stroke="#0081E5" stroke-width="1.5"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#0081E5"/>
+    <text x="60" y="102" font-family="Arial" font-size="8" fill="#FFFF3C" text-anchor="middle">CHENNAI SUPER KINGS</text>
+    
+    <!-- Stars (representing IPL titles) -->
+    <g fill="#0081E5">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M50 20L52 25L47 23L50 20Z"/>
+        <path d="M70 20L72 25L67 23L70 20Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#0081E5" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

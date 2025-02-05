@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FantasyHot</title>
+    <meta name="description" content="Read the latest news, tips, and strategies for fantasy sports on FantasyHot's blog.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+			<div class="container">
+					<div class="header-content">
+							<div class="logo">
+									<a href="index.html">
+											<img src="img/logo.svg" alt="FantasyHot Logo">
+									</a>
+							</div>
+							<button class="burger-menu" aria-label="Открыть меню">
+									<span></span>
+									<span></span>
+									<span></span>
+							</button>
+							<div class="nav-wrapper">
+									<nav class="main-nav">
+											<ul class="desktop-nav">
+													<li><a href="index.html">Home</a></li>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="contact.html">Contact</a></li>
+											</ul>
+											<ul class="mobile-nav">
+													<li><a href="index.html">Home</a></li>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="contact.html">Contact</a></li>
+													<li><a href="cricket.html">Fantasy Cricket</a></li>
+													<li><a href="football.html">Fantasy Football</a></li>
+													<li><a href="basketball.html">Fantasy Basketball</a></li>
+													<li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+													<li><a href="aviator.html">Aviator</a></li>
+													<li><a href="plinko.html">Plinko</a></li>
+													<li><a href="laser247.html">Laser247</a></li>
+													<li><a href="101f.html">101f</a></li>
+											</ul>
+									</nav>
+							</div>
+							<div class="games-dropdown">
+									<button class="games-dropdown-btn">
+											Games
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+											</svg>
+									</button>
+									<div class="games-dropdown-content">
+											<a href="/aviator.html">
+													<span class="game-icon">✈️</span>
+													Aviator
+											</a>
+											<a href="/plinko.html">
+													<span class="game-icon">🎯</span>
+													Plinko
+											</a>
+											<a href="/laser247.html">
+													<span class="game-icon">🎮</span>
+													Laser247
+											</a>
+											<a href="/101f.html">
+													<span class="game-icon">🎲</span>
+													101f
+											</a>
+											<a href="/football.html">
+													<span class="game-icon">⚽</span>
+													Football
+											</a>
+											<a href="/basketball.html">
+													<span class="game-icon">🏀</span>
+													Basketball
+											</a>
+											<a href="/cricket.html">
+													<span class="game-icon">🏏</span>
+													Cricket
+											</a>
+											<a href="/kabaddi.html">
+													<span class="game-icon">🤼</span>
+													Kabaddi
+											</a>
+									</div>
+							</div>
+					</div>
+			</div>
+	</header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1>FantasyHot Blog</h1>
+                <p>Latest news, tips, and strategies for fantasy sports</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="featured-posts">
+        <div class="container">
+            <h2>Featured Articles</h2>
+            <div class="featured-grid">
+                <article class="featured-post">
+                    <div class="post-image">
+                        <img src="img/cricket-strategy.jpg" alt="Cricket Strategy">
+                        <div class="post-category">Cricket</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Top 10 Cricket Fantasy Strategies for 2024</h3>
+                        <p>Learn the best strategies to dominate your fantasy cricket leagues this season.</p>
+                        <div class="post-meta">
+                            <span class="date">March 15, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="contact.html" class="btn-secondary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="featured-post">
+                    <div class="post-image">
+                        <img src="img/football-analysis.jpg" alt="Football Analysis">
+                        <div class="post-category">Football</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Premier League Fantasy: Mid-Season Analysis</h3>
+                        <p>Deep dive into the performance stats and upcoming predictions for Premier League fantasy.</p>
+                        <div class="post-meta">
+                            <span class="date">March 14, 2024</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <a href="contact.html" class="btn-secondary">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts -->
+    <section class="latest-posts">
+        <div class="container">
+            <div class="posts-header">
+                <h2>Latest Articles</h2>
+                <div class="posts-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="cricket">Cricket</button>
+                    <button class="filter-btn" data-category="football">Football</button>
+                    <button class="filter-btn" data-category="basketball">Basketball</button>
+                    <button class="filter-btn" data-category="kabaddi">Kabaddi</button>
+                </div>
+            </div>
+            <div class="posts-grid">
+                <article class="post-card" data-category="football">
+                    <div class="post-image">
+                        <img src="img/football-tips.jpg" alt="Football Tips">
+                        <div class="post-category">Football</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Essential Tips for Fantasy Football Success</h3>
+                        <p>Master the art of team selection and boost your chances of winning.</p>
+                        <div class="post-meta">
+                            <span class="date">March 14, 2024</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="cricket">
+                    <div class="post-image">
+                        <img src="img/cricket-players.jpg" alt="Cricket Players">
+                        <div class="post-category">Cricket</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Rising Stars in Cricket Fantasy League</h3>
+                        <p>Discover emerging players who could be game-changers in your fantasy team.</p>
+                        <div class="post-meta">
+                            <span class="date">March 13, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="basketball">
+                    <div class="post-image">
+                        <img src="img/basketball-draft.jpg" alt="Basketball Draft">
+                        <div class="post-category">Basketball</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>NBA Fantasy Draft Guide 2024</h3>
+                        <p>Complete guide to drafting your perfect NBA fantasy team this season.</p>
+                        <div class="post-meta">
+                            <span class="date">March 12, 2024</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="kabaddi">
+                    <div class="post-image">
+                        <img src="img/kabaddi-pro.jpg" alt="Kabaddi Pro">
+                        <div class="post-category">Kabaddi</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Pro Kabaddi League Fantasy Guide</h3>
+                        <p>Expert tips for creating winning PKL fantasy teams.</p>
+                        <div class="post-meta">
+                            <span class="date">March 11, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="cricket">
+                    <div class="post-image">
+                        <img src="img/cricket-analysis.jpg" alt="Cricket Analysis">
+                        <div class="post-category">Cricket</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Advanced Cricket Analytics</h3>
+                        <p>Using data analytics to improve your fantasy cricket performance.</p>
+                        <div class="post-meta">
+                            <span class="date">March 10, 2024</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="football">
+                    <div class="post-image">
+                        <img src="img/football-transfers.jpg" alt="Football Transfers">
+                        <div class="post-category">Football</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Transfer Window Impact on Fantasy</h3>
+                        <p>How recent transfers affect your fantasy football strategy.</p>
+                        <div class="post-meta">
+                            <span class="date">March 9, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="basketball">
+                    <div class="post-image">
+                        <img src="img/basketball-stats.jpg" alt="Basketball Stats">
+                        <div class="post-category">Basketball</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Understanding Basketball Stats</h3>
+                        <p>Key statistics that matter in fantasy basketball.</p>
+                        <div class="post-meta">
+                            <span class="date">March 8, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="kabaddi">
+                    <div class="post-image">
+                        <img src="img/kabaddi-strategy.jpg" alt="Kabaddi Strategy">
+                        <div class="post-category">Kabaddi</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Kabaddi Fantasy Tactics</h3>
+                        <p>Advanced strategies for PKL fantasy success.</p>
+                        <div class="post-meta">
+                            <span class="date">March 7, 2024</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="cricket">
+                    <div class="post-image">
+                        <img src="img/cricket-captain.jpg" alt="Cricket Captain">
+                        <div class="post-category">Cricket</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Choosing Your Fantasy Captain</h3>
+                        <p>Guide to selecting the perfect captain for maximum points.</p>
+                        <div class="post-meta">
+                            <span class="date">March 6, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="contact.html" style="display: inline-block; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Get Post</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest fantasy sports news and tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="newsletter-agreement" required>
+                        <label for="newsletter-agreement">I agree to receive newsletters and accept the privacy policy</label>
+                    </div>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+			<div class="container">
+					<div class="footer-content">
+						<div>
+							<div class="footer-logo">
+									<img src="img/logo.svg" alt="FantasyHot Logo">
+							</div>
+							<div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+									<a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+											<img src="img/6.png" alt="GamCare Logo" style="height: 40px; width: auto;">
+									</a>
+									<div style="background: #e11d48; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: bold; font-size: 1.125rem;">
+											<span>18+</span>
+									</div>
+							</div>
+						</div>
+							<div class="footer-links">
+									<div class="footer-column">
+											<h4>Fantasy Sports</h4>
+											<ul>
+													<li><a href="cricket.html">Fantasy Cricket</a></li>
+													<li><a href="football.html">Fantasy Football</a></li>
+													<li><a href="basketball.html">Fantasy Basketball</a></li>
+													<li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+											</ul>
+									</div>
+									<div class="footer-column">
+										<h4>Fantasy Arcade</h4>
+										<ul>
+												<li><a href="cricket.html">Fantasy 101F</a></li>
+												<li><a href="football.html">Fantasy Plinko</a></li>
+												<li><a href="basketball.html">Fantasy Laser247</a></li>
+												<li><a href="kabaddi.html">Fantasy Aviator</a></li>
+										</ul>
+								</div>
+									<div class="footer-column">
+											<h4>Quick Links</h4>
+											<ul>
+													<li><a href="contact.html">Contact</a></li>
+													<li><a href="privacy-policy.html">Privacy Policy</a></li>
+													<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+											</ul>
+									</div>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<p class="copyright">&copy; 2024 FantasyHot. All rights reserved.</p>
+					</div>
+			</div>
+	</footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const posts = document.querySelectorAll('.post-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const category = button.getAttribute('data-category');
+
+                    posts.forEach(post => {
+                        if (category === 'all' || post.getAttribute('data-category') === category) {
+                            post.style.display = 'block';
+                            post.style.animation = 'fadeIn 0.5s ease forwards';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

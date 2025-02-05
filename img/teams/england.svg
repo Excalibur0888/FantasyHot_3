@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#CE1124" stroke="#FFFFFF" stroke-width="4"/>
+    
+    <!-- Three Lions -->
+    <g fill="#FFFFFF">
+        <!-- First Lion -->
+        <path d="M35 45C35 45 40 40 45 40C50 40 55 45 55 45L45 60L35 45Z"/>
+        <circle cx="42" cy="43" r="1.5"/>
+        <circle cx="48" cy="43" r="1.5"/>
+        
+        <!-- Second Lion -->
+        <path d="M50 50C50 50 55 45 60 45C65 45 70 50 70 50L60 65L50 50Z"/>
+        <circle cx="57" cy="48" r="1.5"/>
+        <circle cx="63" cy="48" r="1.5"/>
+        
+        <!-- Third Lion -->
+        <path d="M65 45C65 45 70 40 75 40C80 40 85 45 85 45L75 60L65 45Z"/>
+        <circle cx="72" cy="43" r="1.5"/>
+        <circle cx="78" cy="43" r="1.5"/>
+    </g>
+    
+    <!-- Crown -->
+    <path d="M45 30L60 20L75 30L70 35H50L45 30Z" fill="#FFFFFF"/>
+    
+    <!-- Cricket Ball -->
+    <circle cx="60" cy="85" r="8" fill="#FFFFFF"/>
+    <path d="M55 85H65M60 80V90" stroke="#CE1124" stroke-width="1.5"/>
+    <path d="M57 82L63 88M63 82L57 88" stroke="#CE1124" stroke-width="1.5"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#FFFFFF"/>
+    <text x="60" y="102" font-family="Arial" font-size="9" fill="#CE1124" text-anchor="middle">ENGLAND</text>
+    
+    <!-- Stars (representing World Cup wins) -->
+    <g fill="#FFFFFF">
+        <path d="M55 15L57 20L52 18L55 15Z"/>
+        <path d="M65 15L67 20L62 18L65 15Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#FFFFFF" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

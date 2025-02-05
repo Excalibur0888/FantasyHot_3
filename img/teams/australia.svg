@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#00843D" stroke="#FFCD00" stroke-width="4"/>
+    
+    <!-- Southern Cross Stars -->
+    <g fill="#FFFFFF">
+        <!-- Main Stars -->
+        <path d="M40 30L43 40L35 35L40 30Z"/>
+        <path d="M55 25L58 35L50 30L55 25Z"/>
+        <path d="M70 30L73 40L65 35L70 30Z"/>
+        <path d="M85 35L88 45L80 40L85 35Z"/>
+        <!-- Small Star -->
+        <path d="M60 45L61 48L58 46L60 45Z"/>
+    </g>
+    
+    <!-- Kangaroo Silhouette -->
+    <path d="M45 50C45 50 50 45 55 45C60 45 65 50 65 50L60 70L45 50Z" fill="#FFFFFF"/>
+    <path d="M55 48C55 48 58 52 60 52C62 52 65 48 65 48" stroke="#00843D" stroke-width="2"/>
+    
+    <!-- Cricket Ball -->
+    <circle cx="60" cy="85" r="8" fill="#FFFFFF"/>
+    <path d="M55 85H65M60 80V90" stroke="#00843D" stroke-width="1.5"/>
+    <path d="M57 82L63 88M63 82L57 88" stroke="#00843D" stroke-width="1.5"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#FFCD00"/>
+    <text x="60" y="102" font-family="Arial" font-size="9" fill="#00843D" text-anchor="middle">AUSTRALIA</text>
+    
+    <!-- Stars (representing World Cup wins) -->
+    <g fill="#FFCD00">
+        <path d="M30 20L32 25L27 23L30 20Z"/>
+        <path d="M40 15L42 20L37 18L40 15Z"/>
+        <path d="M50 12L52 17L47 15L50 12Z"/>
+        <path d="M60 10L62 15L57 13L60 10Z"/>
+        <path d="M70 12L72 17L67 15L70 12Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#FFCD00" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

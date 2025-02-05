@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#007A33" stroke="#FFFFFF" stroke-width="4"/>
+    
+    <!-- Shamrock Logo -->
+    <path d="M45 45C45 45 50 35 60 35C70 35 75 45 75 45L60 65L45 45Z" fill="#FFFFFF"/>
+    <path d="M35 55C35 55 40 45 50 45C60 45 65 55 65 55L50 75L35 55Z" fill="#FFFFFF"/>
+    <path d="M55 55C55 55 60 45 70 45C80 45 85 55 85 55L70 75L55 55Z" fill="#FFFFFF"/>
+    <path d="M60 65L65 85H55L60 65Z" fill="#FFFFFF"/>
+    
+    <!-- Basketball -->
+    <circle cx="60" cy="50" r="10" fill="#BA9653"/>
+    <path d="M53 50L67 50M60 43L60 57" stroke="#007A33" stroke-width="2"/>
+    <path d="M55 45L65 55M65 45L55 55" stroke="#007A33" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#FFFFFF"/>
+    <text x="60" y="92" font-family="Arial" font-size="10" fill="#007A33" text-anchor="middle">BOSTON CELTICS</text>
+    
+    <!-- Championship Stars -->
+    <g fill="#BA9653">
+        <path d="M30 25L32 30L27 28L30 25Z"/>
+        <path d="M40 20L42 25L37 23L40 20Z"/>
+        <path d="M50 18L52 23L47 21L50 18Z"/>
+        <path d="M60 15L62 20L57 18L60 15Z"/>
+        <path d="M70 18L72 23L67 21L70 18Z"/>
+        <path d="M80 20L82 25L77 23L80 20Z"/>
+        <path d="M90 25L92 30L87 28L90 25Z"/>
+    </g>
+</svg> 

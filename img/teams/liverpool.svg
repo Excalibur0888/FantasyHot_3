@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#C8102E" stroke="#E5E7EB" stroke-width="4"/>
+    
+    <!-- Liver Bird -->
+    <path d="M45 40C45 40 50 35 60 35C70 35 75 40 75 40L60 70L45 40Z" fill="#FFD700"/>
+    <path d="M55 45L65 45M57 50L63 50" stroke="#000" stroke-width="2"/>
+    
+    <!-- Football -->
+    <circle cx="60" cy="75" r="12" fill="#FFFFFF"/>
+    <path d="M52 75L68 75M60 67L60 83" stroke="#000" stroke-width="2"/>
+    <path d="M54 69L66 81M66 69L54 81" stroke="#000" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#000000"/>
+    <text x="60" y="92" font-family="Arial" font-size="10" fill="white" text-anchor="middle">LIVERPOOL FC</text>
+    
+    <!-- Stars (representing European Cups) -->
+    <g fill="#FFD700">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M50 20L52 25L47 23L50 20Z"/>
+        <path d="M60 18L62 23L57 21L60 18Z"/>
+        <path d="M70 20L72 25L67 23L70 20Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- YNWA Text -->
+    <path d="M30 75H90" stroke="#FFD700" stroke-width="2"/>
+    <text x="60" y="73" font-family="Arial" font-size="6" fill="#FFD700" text-anchor="middle">YOU'LL NEVER WALK ALONE</text>
+</svg> 

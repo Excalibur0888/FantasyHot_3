@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#1D428A" stroke="#FFC72C" stroke-width="4"/>
+    
+    <!-- Warriors Bridge Logo -->
+    <path d="M20 50C20 50 40 30 60 30C80 30 100 50 100 50" stroke="#FFC72C" stroke-width="4" fill="none"/>
+    <path d="M30 60L40 45L50 60L60 45L70 60L80 45L90 60" stroke="#FFC72C" stroke-width="4" fill="none"/>
+    
+    <!-- Basketball -->
+    <circle cx="60" cy="70" r="12" fill="#FFC72C"/>
+    <path d="M52 70L68 70M60 62L60 78" stroke="#1D428A" stroke-width="2"/>
+    <path d="M54 64L66 76M66 64L54 76" stroke="#1D428A" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#FFC72C"/>
+    <text x="60" y="92" font-family="Arial" font-size="8" fill="#1D428A" text-anchor="middle">GOLDEN STATE WARRIORS</text>
+    
+    <!-- Stars (representing championships) -->
+    <g fill="#FFC72C">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M50 20L52 25L47 23L50 20Z"/>
+        <path d="M60 18L62 23L57 21L60 18Z"/>
+        <path d="M70 20L72 25L67 23L70 20Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Bay Area Pattern -->
+    <path d="M25 40C25 40 45 35 60 35C75 35 95 40 95 40" stroke="#FFC72C" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M25 45C25 45 45 40 60 40C75 40 95 45 95 45" stroke="#FFC72C" stroke-width="2" fill="none" opacity="0.5"/>
+</svg> 

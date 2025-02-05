@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantasyHot - Your Ultimate Fantasy Sports Destination</title>
+    <meta name="description" content="Join FantasyHot for the best fantasy sports experience in cricket, football, basketball, and kabaddi. Play fantasy games and win big!">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div class="age-verification">
+        <div class="age-verification-content">
+            <img src="img/logo.svg" alt="FantasyHot Logo">
+            <h2>Age Verification</h2>
+            <p>You must be 18 years or older to access this website.</p>
+            <div class="age-buttons">
+                <button class="btn-yes">Yes, I am over 18</button>
+                <button class="btn-no">No, I am under 18</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restricted Access Modal -->
+    <div class="restricted-modal" id="restrictedModal">
+        <div class="modal-content">
+            <h2>Access Restricted</h2>
+            <p>Sorry, you must be 18 years or older to access this website.</p>
+            <p>Access denied.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="FantasyHot Logo">
+                    </a>
+                </div>
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-wrapper">
+                    <nav class="main-nav">
+                        <ul class="desktop-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <ul class="mobile-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cricket.html">Fantasy Cricket</a></li>
+                            <li><a href="football.html">Fantasy Football</a></li>
+                            <li><a href="basketball.html">Fantasy Basketball</a></li>
+                            <li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+														<li><a href="aviator.html">Aviator</a></li>
+                            <li><a href="plinko.html">Plinko</a></li>
+                            <li><a href="laser247.html">Laser247</a></li>
+                            <li><a href="101f.html">101f</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="games-dropdown">
+                    <button class="games-dropdown-btn">
+                        Games
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                    <div class="games-dropdown-content">
+                        <a href="/aviator.html">
+                            <span class="game-icon">✈️</span>
+                            Aviator
+                        </a>
+                        <a href="/plinko.html">
+                            <span class="game-icon">🎯</span>
+                            Plinko
+                        </a>
+                        <a href="/laser247.html">
+                            <span class="game-icon">🎮</span>
+                            Laser247
+                        </a>
+                        <a href="/101f.html">
+                            <span class="game-icon">🎲</span>
+                            101f
+                        </a>
+                        <a href="/football.html">
+                            <span class="game-icon">⚽</span>
+                            Football
+                        </a>
+                        <a href="/basketball.html">
+                            <span class="game-icon">🏀</span>
+                            Basketball
+                        </a>
+                        <a href="/cricket.html">
+                            <span class="game-icon">🏏</span>
+                            Cricket
+                        </a>
+                        <a href="/kabaddi.html">
+                            <span class="game-icon">🤼</span>
+                            Kabaddi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to FantasyHot</h1>
+                <p>Your Ultimate Fantasy Sports Destination</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn-primary">Play Now</a>
+                    <a href="#games" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured-games" id="games">
+        <div class="container">
+            <h2>Featured Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-overlay"></div>
+                        <img src="img/aviator.jpg" alt="Aviator">
+                        <div class="game-content">
+                            <h3>Aviator</h3>
+                            <p>Experience the thrill of flying high with increasing multipliers!</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <span class="label">Online</span>
+                                    <span class="value">10.5K</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Max Win</span>
+                                    <span class="value">100x</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">RTP</span>
+                                    <span class="value">97%</span>
+                                </div>
+                            </div>
+                            <a href="aviator.html" class="btn-play">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-overlay"></div>
+                        <img src="img/plinko.jpg" alt="Plinko">
+                        <div class="game-content">
+                            <h3>Plinko</h3>
+                            <p>Watch the ball drop and multiply your points!</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <span class="label">Online</span>
+                                    <span class="value">8.2K</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Max Win</span>
+                                    <span class="value">1000x</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">RTP</span>
+                                    <span class="value">99%</span>
+                                </div>
+                            </div>
+                            <a href="plinko.html" class="btn-play">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-overlay"></div>
+                        <img src="img/101f.jpg" alt="101F">
+                        <div class="game-content">
+                            <h3>101F</h3>
+                            <p>Test your luck and strategy in this thrilling game!</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <span class="label">Online</span>
+                                    <span class="value">6.7K</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Max Win</span>
+                                    <span class="value">500x</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">RTP</span>
+                                    <span class="value">96%</span>
+                                </div>
+                            </div>
+                            <a href="101f.html" class="btn-play">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Players Section -->
+    <section class="top-players">
+        <div class="container">
+            <h2>Top Players</h2>
+            <div class="players-grid">
+                <div class="player-card gold">
+                    <div class="player-rank">1</div>
+                    <div class="player-avatar">
+                        <img src="img/player1.jpg" alt="Top Player">
+                        <div class="player-status online"></div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Alex Masters</h3>
+                        <p class="player-title">Aviator Legend</p>
+                        <div class="player-achievements">
+                            <span class="achievement">
+                                1st Place
+                            </span>
+                            <span class="achievement">
+                                150K Points
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-card silver">
+                    <div class="player-rank">2</div>
+                    <div class="player-avatar">
+                        <img src="img/player2.jpg" alt="Second Player">
+                        <div class="player-status online"></div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Sarah Chen</h3>
+                        <p class="player-title">Plinko Master</p>
+                        <div class="player-achievements">
+                            <span class="achievement">
+                                2nd Place
+                            </span>
+                            <span class="achievement">
+                                120K Points
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-card bronze">
+                    <div class="player-rank">4</div>
+                    <div class="player-avatar">
+                        <img src="img/player3.jpg" alt="Fourth Player">
+                        <div class="player-status offline"></div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Emma Wilson</h3>
+                        <p class="player-title">Laser247 Pro</p>
+                        <div class="player-achievements">
+                            <span class="achievement">
+                                Rising Star
+                            </span>
+                            <span class="achievement">
+                                80K Points
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Boosts Section -->
+    <section class="power-boosts">
+        <div class="container">
+            <h2>Power Boosts</h2>
+            <div class="boosts-grid">
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 10L10 50H25L20 55L50 25H35L40 10H30Z" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="r" values="18;22;18" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Double Points</h3>
+                    <p>Double points for all games</p>
+                    <div class="boost-stats">
+                        <span>Duration: 1 hour</span>
+                    </div>
+                    <a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+                
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M20 30A10 10 0 0 1 40 30A10 10 0 0 1 20 30" stroke="currentColor" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" from="0 30 30" to="360 30 30" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M15 30A15 15 0 0 1 45 30A15 15 0 0 1 15 30" stroke="currentColor" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" from="360 30 30" to="0 30 30" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>VIP Access</h3>
+                    <p>Access to premium tournaments</p>
+                    <div class="boost-stats">
+                        <span>Duration: 24 hours</span>
+                    </div>
+                    <a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+                
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect x="15" y="15" width="10" height="30" fill="currentColor">
+                                <animate attributeName="height" values="30;10;30" dur="1s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="25" y="15" width="10" height="30" fill="currentColor">
+                                <animate attributeName="height" values="30;20;30" dur="1s" repeatCount="indefinite" begin="0.2s"/>
+                            </rect>
+                            <rect x="35" y="15" width="10" height="30" fill="currentColor">
+                                <animate attributeName="height" values="30;15;30" dur="1s" repeatCount="indefinite" begin="0.4s"/>
+                            </rect>
+                        </svg>
+                    </div>
+                    <h3>Team Boost</h3>
+                    <p>+20% points for team games</p>
+                    <div class="boost-stats">
+                        <span>Duration: 2 hours</span>
+                    </div>
+                    <a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+                
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 10L40 30L30 50L20 30L30 10Z" fill="currentColor">
+                                <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <circle cx="30" cy="30" r="25" stroke="currentColor" stroke-width="2" stroke-dasharray="5 5">
+                                <animateTransform attributeName="transform" type="rotate" from="0 30 30" to="360 30 30" dur="6s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Lucky Streak</h3>
+                    <p>Bonus points for winning streaks</p>
+                    <div class="boost-stats">
+                        <span>Duration: 3 hours</span>
+                    </div>
+                    	<a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <polygon points="30,10 35,25 50,25 40,35 45,50 30,40 15,50 20,35 10,25 25,25" fill="currentColor">
+                                <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+                            </polygon>
+                            <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4">
+                                <animate attributeName="stroke-dashoffset" values="0;20" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Speed Boost</h3>
+                    <p>Increase your game speed by 2x</p>
+                    <div class="boost-stats"><span>Duration: 1 hour</span></div>
+                    <a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+                <div class="boost-card">
+                    <div class="boost-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="15" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="r" values="15;20;15" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <path d="M20,30 Q30,20 40,30 Q30,40 20,30" fill="currentColor">
+                                <animate attributeName="d" values="M20,30 Q30,20 40,30 Q30,40 20,30;M20,25 Q30,35 40,25 Q30,15 20,25;M20,30 Q30,20 40,30 Q30,40 20,30" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Focus Mode</h3>
+                    <p>Enhanced precision and control</p>
+                    <div class="boost-stats"><span>Duration: 30 mins</span></div>
+                    <a href="contact.html" class="btn-boost">Activate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Tournaments -->
+    <section class="active-tournaments">
+        <div class="container">
+            <h2>Active Tournaments</h2>
+            <div class="tournaments-grid">
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <img src="img/cricket-tournament.jpg" alt="Cricket World Cup">
+                        <div class="tournament-status">Live</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Cricket World Cup</h3>
+                        <div class="tournament-info">
+                            <span class="players">1.2K Players</span>
+                            <span class="prize">Prize Pool: 100K Points</span>
+                        </div>
+                        <div class="tournament-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span>Ends in 2 days</span>
+                        </div>
+                        <a href="contact.html" class="btn-primary">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <img src="img/football-tournament.jpg" alt="Premier League">
+                        <div class="tournament-status">Live</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Premier League Fantasy</h3>
+                        <div class="tournament-info">
+                            <span class="players">2.5K Players</span>
+                            <span class="prize">Prize Pool: 200K Points</span>
+                        </div>
+                        <div class="tournament-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%"></div>
+                            </div>
+                            <span>Ends in 5 days</span>
+                        </div>
+                        <a href="contact.html" class="btn-primary">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <img src="img/basketball-tournament.jpg" alt="NBA Fantasy">
+                        <div class="tournament-status">Live</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>NBA Fantasy League</h3>
+                        <div class="tournament-info">
+                            <span class="players">1.8K Players</span>
+                            <span class="prize">Prize Pool: 150K Points</span>
+                        </div>
+                        <div class="tournament-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                            <span>Ends in 3 days</span>
+                        </div>
+                        <a href="contact.html" class="btn-primary">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <img src="img/kabaddi-tournament.jpg" alt="Pro Kabaddi">
+                        <div class="tournament-status">Live</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Pro Kabaddi League</h3>
+                        <div class="tournament-info">
+                            <span class="players">900 Players</span>
+                            <span class="prize">Prize Pool: 80K Points</span>
+                        </div>
+                        <div class="tournament-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30%"></div>
+                            </div>
+                            <span>Ends in 7 days</span>
+                        </div>
+                        <a href="contact.html" class="btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section class="game-features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L25 15L35 17L28 25L30 35L20 30L10 35L12 25L5 17L15 15L20 5Z" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" fill="freeze"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Dynamic Gameplay</h3>
+                    <p>Experience thrilling real-time action with smooth animations and responsive controls</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="10" y="15" width="20" height="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 10L25 10L20 5L15 10Z" fill="currentColor">
+                                <animate attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,2; 0,0" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Fair Play System</h3>
+                    <p>Advanced algorithms ensure balanced and fair gameplay for all players</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 10V20L25 25" stroke="currentColor" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="5s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Real-time Stats</h3>
+                    <p>Track your performance with detailed statistics and live updates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 30C10 30 15 20 20 20C25 20 30 30 30 30" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="d" values="M10 30C10 30 15 20 20 20C25 20 30 30 30 30;M10 25C10 25 15 35 20 35C25 35 30 25 30 25;M10 30C10 30 15 20 20 20C25 20 30 30 30 30" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <circle cx="20" cy="15" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Skill-Based Rewards</h3>
+                    <p>Earn points and unlock achievements based on your skill and strategy</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M15 20L25 20M20 15L20 25" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="stroke-width" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" stroke-dasharray="5 5">
+                                <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="8s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Power Boosts</h3>
+                    <p>Enhance your gameplay with unique power-ups and special abilities</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 20C10 20 20 10 30 20C30 20 20 30 10 20Z" stroke="currentColor" stroke-width="2">
+                                <animate attributeName="d" values="M10 20C10 20 20 10 30 20C30 20 20 30 10 20Z;M10 15C10 15 20 25 30 15C30 15 20 5 10 15Z;M10 20C10 20 20 10 30 20C30 20 20 30 10 20Z" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <circle cx="20" cy="20" r="3" fill="currentColor">
+                                <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Visual Effects</h3>
+                    <p>Stunning graphics and smooth animations enhance your gaming experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <div class="community-stats">
+                <div class="stat-card">
+                    <div class="stat-value">50K+</div>
+                    <div class="stat-label">Active Players</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1M+</div>
+                    <div class="stat-label">Games Played</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">100K+</div>
+                    <div class="stat-label">Daily Points Earned</div>
+                </div>
+            </div>
+            <div class="community-links">
+                <a href="contact.html" class="social-link discord">
+                    <svg class="discord-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.11-.08.22-.17.33-.25.02-.02.05-.02.07-.01 3.44 1.57 7.15 1.57 10.55 0 .02-.01.05-.01.07.01.11.09.22.17.33.26.04.03.04.09-.01.11-.52.31-1.07.56-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.03.02.06.03.09.02 1.72-.53 3.45-1.33 5.25-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12z" fill="currentColor"/>
+                    </svg>
+                    Join Discord
+                </a>
+                <a href="contact.html" class="social-link telegram">
+                    <svg class="telegram-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20.665 3.717L2.935 10.557C1.725 11.037 1.732 11.697 2.713 12.007L7.265 13.407L17.797 6.757C18.295 6.457 18.75 6.617 18.375 6.947L9.843 14.607L9.473 19.287C9.943 19.287 10.153 19.067 10.423 18.807L12.663 16.637L17.265 20.017C18.125 20.487 18.755 20.247 18.965 19.287L21.945 5.157C22.255 3.987 21.425 3.417 20.665 3.717Z" fill="currentColor"/>
+                    </svg>
+                    Join Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose FantasyHot Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose FantasyHot</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="feature-icon">
+                            <svg class="shield-icon" viewBox="0 0 24 24" width="40" height="40">
+                                <path class="shield-path" d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Secure Platform</h3>
+                            <p>Advanced encryption and data protection</p>
+                            <div class="feature-hover">
+                                <span class="hover-text">Security Level</span>
+                                <div class="security-level">
+                                    <div class="level-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="feature-icon">
+                            <svg class="wallet-icon" viewBox="0 0 24 24" width="40" height="40">
+                                <path class="wallet-body" d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1"/>
+                                <path class="wallet-top" d="M21 12h-4c-1.1 0-2 .9-2 2s.9 2 2 2h4"/>
+                                <circle class="wallet-dot" cx="17" cy="14" r="1"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Instant Processing</h3>
+                            <p>Fast and reliable transactions 24/7</p>
+                            <div class="feature-hover">
+                                <span class="hover-text">Processing Speed</span>
+                                <div class="speed-indicator">
+                                    <div class="speed-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="feature-icon">
+                            <svg class="support-icon" viewBox="0 0 24 24" width="40" height="40">
+                                <circle class="support-circle" cx="12" cy="12" r="10" fill="#10b981"/>
+                                <path class="support-headset" d="M8 15V9a4 4 0 0 1 8 0v6M6 12h2v3H6zM16 12h2v3h-2z" fill="#10b981"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>24/7 Support</h3>
+                            <p>Professional support team at your service</p>
+                            <div class="feature-hover">
+                                <span class="hover-text">Response Time</span>
+                                <div class="response-time">2 min</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="feature-icon">
+                            <svg class="fairness-icon" viewBox="0 0 24 24" width="40" height="40">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#10b981"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fair Gaming</h3>
+                            <p>Transparent and verified gaming system</p>
+                            <div class="feature-hover">
+                                <span class="hover-text">Fairness Index</span>
+                                <div class="fairness-meter">
+                                    <div class="meter-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-content">
+                <h2>Disclaimer</h2>
+                <p>The games offered by us, involve elements of financial risk and at times may be addictive. We therefore encourage our players to keep it fun and participate responsibly and at your own risk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+							<div>
+                <div class="footer-logo">
+                    <img src="img/logo.svg" alt="FantasyHot Logo">
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+                    <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <img src="img/6.png" alt="GamCare Logo" style="height: 40px; width: auto;">
+                    </a>
+                    <div style="background: #e11d48; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: bold; font-size: 1.125rem;">
+                        <span>18+</span>
+                    </div>
+                </div>
+							</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Fantasy Sports</h4>
+                        <ul>
+                            <li><a href="cricket.html">Fantasy Cricket</a></li>
+                            <li><a href="football.html">Fantasy Football</a></li>
+                            <li><a href="basketball.html">Fantasy Basketball</a></li>
+                            <li><a href="kabaddi.html">Fantasy Kabaddi</a></li>
+                        </ul>
+                    </div>
+										<div class="footer-column">
+											<h4>Fantasy Arcade</h4>
+											<ul>
+													<li><a href="cricket.html">Fantasy 101F</a></li>
+													<li><a href="football.html">Fantasy Plinko</a></li>
+													<li><a href="basketball.html">Fantasy Laser247</a></li>
+													<li><a href="kabaddi.html">Fantasy Aviator</a></li>
+											</ul>
+									</div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 FantasyHot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

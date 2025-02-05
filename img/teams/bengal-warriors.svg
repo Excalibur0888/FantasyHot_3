@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#FFB612" stroke="#000000" stroke-width="4"/>
+    
+    <!-- Warrior Helmet -->
+    <path d="M40 45C40 45 50 35 60 35C70 35 80 45 80 45L60 70L40 45Z" fill="#000000"/>
+    <path d="M45 42C45 42 55 50 60 50C65 50 75 42 75 42" stroke="#FFB612" stroke-width="3"/>
+    
+    <!-- Helmet Details -->
+    <path d="M50 40L55 45M70 40L65 45" stroke="#FFB612" stroke-width="2"/>
+    <path d="M57 48C57 48 60 50 60 50C60 50 63 48 63 48" stroke="#FFB612" stroke-width="2"/>
+    
+    <!-- Warrior Shield -->
+    <path d="M45 55H75L60 85L45 55Z" fill="#000000"/>
+    <path d="M50 60H70L60 80L50 60Z" fill="#FFB612"/>
+    
+    <!-- Team Name -->
+    <path d="M20 95H100V105H20V95Z" fill="#000000"/>
+    <text x="60" y="102" font-family="Arial" font-size="8" fill="#FFB612" text-anchor="middle">BENGAL WARRIORS</text>
+    
+    <!-- Stars (representing achievements) -->
+    <g fill="#000000">
+        <path d="M40 25L42 30L37 28L40 25Z"/>
+        <path d="M60 20L62 25L57 23L60 20Z"/>
+        <path d="M80 25L82 30L77 28L80 25Z"/>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <path d="M30 65C30 65 45 85 60 85C75 85 90 65 90 65" stroke="#000000" stroke-width="1" opacity="0.5" fill="none"/>
+</svg> 

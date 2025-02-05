@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#98002E" stroke="#F9A01B" stroke-width="4"/>
+    
+    <!-- Flame Logo -->
+    <path d="M45 75C45 75 50 55 60 45C70 55 75 75 75 75C75 85 65 90 60 90C55 90 45 85 45 75Z" fill="#F9A01B"/>
+    <path d="M50 70C50 70 55 55 60 50C65 55 70 70 70 70C70 77 65 80 60 80C55 80 50 77 50 70Z" fill="#FFFFFF"/>
+    <path d="M55 65C55 65 58 55 60 52C62 55 65 65 65 65C65 69 62 71 60 71C58 71 55 69 55 65Z" fill="#98002E"/>
+    
+    <!-- Basketball -->
+    <circle cx="60" cy="35" r="12" fill="#F9A01B"/>
+    <path d="M52 35L68 35M60 27L60 43" stroke="#98002E" stroke-width="2"/>
+    <path d="M54 29L66 41M66 29L54 41" stroke="#98002E" stroke-width="2"/>
+    
+    <!-- Team Name -->
+    <path d="M20 85H100V95H20V85Z" fill="#F9A01B"/>
+    <text x="60" y="92" font-family="Arial" font-size="10" fill="#98002E" text-anchor="middle">MIAMI HEAT</text>
+    
+    <!-- Championship Stars -->
+    <g fill="#FFFFFF">
+        <path d="M45 20L47 25L42 23L45 20Z"/>
+        <path d="M60 18L62 23L57 21L60 18Z"/>
+        <path d="M75 20L77 25L72 23L75 20Z"/>
+    </g>
+</svg> 

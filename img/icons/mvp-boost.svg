@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Crown -->
+    <path d="M10 25L20 15L30 25L40 15L50 25L45 35H15L10 25Z" fill="currentColor">
+        <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Star -->
+    <path d="M30 30L33 38L42 38L35 43L37 50L30 45L23 50L25 43L18 38L27 38L30 30Z" fill="currentColor">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Sparkles -->
+    <g fill="currentColor">
+        <circle cx="15" cy="20" r="2">
+            <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+        </circle>
+        <circle cx="45" cy="20" r="2">
+            <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+        </circle>
+        <circle cx="30" cy="15" r="2">
+            <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+        </circle>
+    </g>
+    
+    <!-- MVP Text -->
+    <path d="M20 40H40V45H20V40Z" fill="currentColor"/>
+    <text x="30" y="44" font-family="Arial" font-size="8" fill="black" text-anchor="middle">MVP</text>
+    
+    <!-- Glow Effect -->
+    <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    
+    <!-- Outer Ring -->
+    <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none" filter="url(#glow)">
+        <animate attributeName="stroke-dasharray" values="0 180;180 180" dur="2s" repeatCount="1"/>
+    </circle>
+</svg> 
