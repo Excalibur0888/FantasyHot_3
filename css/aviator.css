@@ -497,6 +497,10 @@
     position: relative;
 }
 
+.game-statistics .flight-heading {
+    color: #fff;
+}
+
 .flight-heading {
     text-align: center;
     color: #000;
