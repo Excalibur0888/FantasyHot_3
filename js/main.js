@@ -1,6 +1,7 @@
 // Утилиты для работы с модальными окнами
 function showModal(modal) {
     if (modal) {
+        modal.style.display = 'flex';
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -8,45 +9,80 @@ function showModal(modal) {
 
 function hideModal(modal) {
     if (modal) {
+        modal.style.display = 'none';
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
 }
 
+// Utility functions for age verification
 function isAgeVerified() {
-    return localStorage.getItem('ageVerified') === 'true';
+    const verified = localStorage.getItem('ageVerified');
+    console.log('Checking age verification:', verified);
+    return verified === 'true';
 }
 
-function setAgeVerified() {
-    localStorage.setItem('ageVerified', 'true');
+function setAgeVerified(value) {
+    console.log('Setting age verification to:', value);
+    localStorage.setItem('ageVerified', value.toString());
+}
+
+function showAgeVerification() {
+    const ageVerification = document.querySelector('.age-verification');
+    if (ageVerification) {
+        ageVerification.style.display = 'flex';
+        ageVerification.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function hideAgeVerification() {
+    const ageVerification = document.querySelector('.age-verification');
+    if (ageVerification) {
+        ageVerification.style.display = 'none';
+        ageVerification.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
 }
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded');
+    
     const ageVerification = document.querySelector('.age-verification');
-    const restrictedModal = document.querySelector('.restricted-modal');
+    const restrictedModal = document.getElementById('restrictedModal');
     const btnYes = document.querySelector('.btn-yes');
     const btnNo = document.querySelector('.btn-no');
 
-    // Проверяем, верифицирован ли возраст
-    if (!isAgeVerified() && ageVerification) {
-        showModal(ageVerification);
+    // Check if this is a new session
+    const sessionVerified = sessionStorage.getItem('sessionVerified');
+    
+    // Only show verification if not verified in localStorage AND not verified in current session
+    if (!isAgeVerified() && !sessionVerified) {
+        console.log('New session, showing age verification');
+        showAgeVerification();
+        // Mark this session as verified to prevent showing modal on page navigation
+        sessionStorage.setItem('sessionVerified', 'true');
     }
 
-    // Обработчик для кнопки "Да"
+    // Handle "Yes" button click
     if (btnYes) {
         btnYes.addEventListener('click', function() {
-            setAgeVerified();
-            hideModal(ageVerification);
+            console.log('Yes clicked');
+            setAgeVerified(true);
+            hideAgeVerification();
         });
     }
 
-    // Обработчик для кнопки "Нет"
+    // Handle "No" button click
     if (btnNo) {
         btnNo.addEventListener('click', function() {
-            hideModal(ageVerification);
+            console.log('No clicked');
+            setAgeVerified(false);
+            hideAgeVerification();
             if (restrictedModal) {
-                showModal(restrictedModal);
+                restrictedModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
                 setTimeout(() => {
                     window.location.href = 'https://www.google.com';
                 }, 3000);
@@ -54,29 +90,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Закрытие модальных окон по клику вне контента
+    // Prevent closing age verification by clicking outside
     document.addEventListener('click', function(event) {
-        if (event.target.classList.contains('age-verification') || 
-            event.target.classList.contains('restricted-modal')) {
-            // Не закрываем окно проверки возраста по клику вне
-            if (!isAgeVerified() && event.target.classList.contains('age-verification')) {
-                return;
-            }
-            hideModal(event.target);
+        if (event.target === ageVerification && !isAgeVerified()) {
+            console.log('Prevented closing by outside click');
+            event.preventDefault();
+            return false;
         }
     });
 
-    // Закрытие по клавише Escape
+    // Prevent closing by Escape key
     document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            const activeModal = document.querySelector('.modal.active');
-            if (activeModal) {
-                // Не закрываем окно проверки возраста по Escape
-                if (!isAgeVerified() && activeModal.classList.contains('age-verification')) {
-                    return;
-                }
-                hideModal(activeModal);
-            }
+        if (event.key === 'Escape' && !isAgeVerified()) {
+            console.log('Prevented closing by Escape key');
+            event.preventDefault();
+            return false;
         }
     });
 
@@ -91,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : '';
         });
 
-        // Закрытие меню при клике вне его
         document.addEventListener('click', function(e) {
             if (!navWrapper.contains(e.target) && !burgerMenu.contains(e.target) && navWrapper.classList.contains('active')) {
                 burgerMenu.classList.remove('active');
@@ -100,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Закрытие меню при изменении размера окна
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1024) {
                 burgerMenu.classList.remove('active');

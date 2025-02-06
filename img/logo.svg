@@ -11,7 +11,7 @@
     <text x="45" y="33" font-family="Arial Black" font-size="24" fill="white">Fantasy</text>
     
     <!-- Текст "Play" -->
-    <text x="150" y="33" font-family="Arial Black" font-size="24" fill="#f59e0b">HotApp</text>
+    <text x="150" y="33" font-family="Arial Black" font-size="24" fill="#f59e0b">HotGo</text>
     
     <!-- Декоративные линии -->
     <line x1="50" y1="38" x2="135" y2="38" stroke="#475569" stroke-width="2"/>

@@ -1834,20 +1834,6 @@ a:hover {
     opacity: 1;
 }
 
-.game-features .feature-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1.5rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #10b981;
-    transition: all 0.3s ease;
-}
-
 .game-features .feature-card:hover .feature-icon {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.15);
@@ -1931,15 +1917,31 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .age-verification.active {
+    opacity: 1;
+    visibility: visible;
     display: flex;
+}
+
+.age-verification[style*="flex"] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.age-verification[style*="none"] {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
 }
 
 .age-verification-content {
@@ -1950,6 +1952,12 @@ a:hover {
     max-width: 90%;
     width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.age-verification[style*="flex"] .age-verification-content {
+    transform: translateY(0);
 }
 
 .age-verification-content img {
@@ -2313,6 +2321,7 @@ a:hover {
 .legal-content ul {
     margin: 1.5rem 0;
     padding-left: 2rem;
+		list-style: none;
 }
 
 .legal-content li {
